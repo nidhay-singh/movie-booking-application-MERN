@@ -12,7 +12,7 @@ const movieRouter = require('./routes/moviesRoutes');
 const bookingRouter=require('./routes/bookingRoutes');
 const cors=require('cors');
 // PORT NUMBER 
-const PORT=4000;
+const PORT=process.env.PORT || 4000;
 app.use(cors());
 
 // middleware routes
